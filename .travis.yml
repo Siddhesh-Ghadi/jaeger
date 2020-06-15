@@ -11,6 +11,17 @@ matrix:
     env:
     - TESTS=true
     - COVERAGE=true
+    arch: ppc64le
+    addons:
+        apt:
+          packages:
+          - jq
+          - time
+          - docker-compose
+  - go: "1.14.x"
+    env:
+    - TESTS=true
+    - COVERAGE=true
   - go: "1.14.x"
     env:
     - PROTO_GEN_TEST=true
