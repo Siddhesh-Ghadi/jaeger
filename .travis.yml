@@ -13,8 +13,7 @@ matrix:
     - COVERAGE=true
     arch: ppc64le
     addons:
-        apt: 
-          packages: jq
+        apt: jq
   - go: "1.14.x"
     env:
     - TESTS=true
