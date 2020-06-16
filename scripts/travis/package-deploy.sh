@@ -73,3 +73,4 @@ package linux-s390x
 package linux-arm64
 package linux-ppc64le
 
+ls -l ./deploy/
