@@ -44,6 +44,7 @@ function package {
     echo "Packaging into $ARCHIVE_NAME:"
     tar -czvf ./deploy/$ARCHIVE_NAME $PACKAGE_STAGING_DIR
     rm -rf $PACKAGE_STAGING_DIR
+    ls ./deploy
 }
 
 # script start
