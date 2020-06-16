@@ -44,7 +44,6 @@ function package {
     echo "Packaging into $ARCHIVE_NAME:"
     tar -czvf ./deploy/$ARCHIVE_NAME $PACKAGE_STAGING_DIR
     rm -rf $PACKAGE_STAGING_DIR
-    ls ./deploy
 }
 
 # script start
@@ -63,6 +62,9 @@ echo "Working on version: $VERSION"
 rm -rf deploy $DEPLOY_STAGING_DIR
 mkdir deploy
 mkdir $DEPLOY_STAGING_DIR
+
+echo $PWD
+ls -l
 
 package linux-amd64
 package darwin-amd64
